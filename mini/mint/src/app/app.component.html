@@ -1,0 +1,20 @@
+<table class="table">
+<thead>
+      <tr>
+        <th>EmpCode</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Designation</th>
+      </tr>
+    </thead>
+  <br>
+    <tbody>
+      <tr *ngFor="let user of users$">
+        <td>{{ user.empcode }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{user.designation}}</td>
+       
+      </tr>
+    </tbody>
+  </table>
